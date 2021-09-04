@@ -2,37 +2,52 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>Healthy</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 
 <body>
 
-    <header id="cabecera">
-        
-        <a href="index.html"><div class="logo"><img src="assets/img/logo.png" alt="logo" width="248" height="45"></div></a><nav class="menu">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="pages/servicios.html">Servicios</a>
-                <ul>
-                    <li>Medicina familiar</li>
-                    <li>Salud mental</li>
-                    <li>Pediatría</li>
-                    <li>Nutrición</li>
-                </ul>
-            </li>
-            <li><a href="pages/nosotros.html">Sobre Nosotros</a></li>
-            <li><a href="pages/blog.html">Blog</a></li>
-            <li class="boton_login"><a href="pages/login.html">Login</a></li>
+    <header class="header">        
+      <nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: #8883F0;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="assets/img/logo_color.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Sobre Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/blog.html">Blog</a>
+              </li>
             </ul>
-        </nav>
-        
+            <button class="btn btn-sm btn-outline-primary" type="button">login</button>
+          </div>
+        </div>
+      </nav>  
     </header>
+
     <main>
         <section class="SlidePrincipal">
-            <h1>Salud y bienestar <br/> a tu alcance</h1>
-            <p>Accedé a cuidados de salud en cualquier momento, </br> estés donde estés</p>
-            <input type="button" class="PrimaryButton" value="Ver a un médico ahora">
+            <div class="content-slide">
+              <h1>Salud y bienestar a tu alcance</h1>
+              <p>Accedé a cuidados de salud en cualquier momento, estés donde estés</p>
+              <button type="button" class="PrimaryButton">ver un médico ahora</button>
+            </div>
+
+            <div class="img-principal">
+              <img src="./assets/img/doctor.png" alt="doctor">
+            </div>
         </section>
     
 
@@ -42,7 +57,12 @@
 
             <article class="texto_quehacemos">
                 <h2>¿Qué hacemos?</h2>
-                <p>Ayudamos a la comunidad latina a acceder a cuidados de salud de calidad </br> en el momento y lugar que lo necesiten</p>
+                <p>Trabajamos con diferentes sectores impulsar la transformación digital de la salud.</p>
+                <ul>
+                  <li>Facilita el diagnóstico, tratamiento y toma de decisiones a distancia de forma más rápida y eficaz.</li>
+                  <li>Agiliza el funcionamiento del sistema sanitario, minimiza el margen de error, supone un ahorro de tiempo y disminuye los costes.</li>
+                  <li>Aumenta la productividad de los profesionales de la salud.</li> 
+                </ul>
             </article>
 
             <div class="img_quehacemos"><img src="assets/img/img_quehacemos.png" alt="dj" width="438" height="469"></div>
@@ -54,48 +74,31 @@
   
         <!-- INICIO DESTACADOS-->
 
-        <section class="servicios">
-
-            <article class="especialidades">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/salud-mental.png" width="50px" height="50px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h3 class="card-title">Salud Mental</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, debitis. Ex, sapiente officiis. Ab autem consectetur minus optio sed aperiam quas.</p>
-                    <input type="button" class="SecondaryButton" value="Conocé más">
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="especialidades">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/familiar.png" width="50px" height="50px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h3 class="card-title">Medicina Familiar</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, debitis. Ex, sapiente officiis. Ab autem consectetur minus optio sed aperiam quas.</p>
-                    <a href="pages/servicios.html"><input type="button" class="SecondaryButton" value="Conocé más"> </a>
-                    </div>
-                </div>
-
-            </article>
-
-            <article class="especialidades">
-
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/img/nutricion.png" width="50px" height="50px" class="card-img-top" alt="...">
-                    <div class="card-body">
-                    <h3 class="card-title">Nutrición</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, debitis. Ex, sapiente officiis. Ab autem consectetur minus optio sed aperiam quas.</p>
-                    <input type="button" class="SecondaryButton" value="Conocé más">
-                    </div>
-                </div>
-
-            </article>
-
-
+       <section class="servicios">
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/saludmental.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Salud Mental</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/nutricion.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Nutrición</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem;">
+            <img src="./assets/img/familiar.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Medicina familiar</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
         </section>
 
         <!-- FIN DESTACADOS-->
@@ -104,7 +107,6 @@
         <!--INICIO CALL TO ACTION-->
 
         <section class="plataforma">
-
             <div>
                 <h2>Todo en una misma plataforma</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit, debitis.</p>
@@ -123,10 +125,19 @@
 
         <!--INICIO TESTIMONIOS-->
 
-        <section class="testimonios">
-            <h3>¿Qué dicen nuestros usuarios?</h3>
-            <img src="assets/img/img_testimonios.png" alt="testimonios" width="400" height="150">
-            <p>"¡La asociación, la transparencia y la seguridad son cualidades que </br> nos hacen mantener esta asociación de éxito y confianza!"</p>
+        <section class="container-fluid">
+            <div class="testimonios">
+                <h2>¿Qué dicen nuestros usuarios?</h2>
+                <img src="assets/img/img_testimonios.png" alt="testimonios" width="400" height="150">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                    <p>A well-known quote, contained in a blockquote element.</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                    Someone famous in <cite title="Source Title">Source Title</cite>
+                    </figcaption>
+                </figure>
+            </div>
         </section>
 
         <!--FIN TESTIMONIOS-->
@@ -139,11 +150,11 @@
                 <img src="assets/img/logo.png" alt="logo" width="248" height="45">
             </div>
             <div class="pie_01">
-                <p>© 2021 Healthcheck, Inc.</p>
+                <small>© 2021 Healthcheck, Inc.</small>
 
             </div>
             <div class="pie_02">
-                <p>Terms    Privacy   Do not sell my personal information    Site map</p>
+                <small>Terms    Privacy   Do not sell my personal information    Site map</small>
             </div>
             <div class="redes">
                 <div class="LogosRedes"><img src="assets/img/facebook.png" alt="logo facebook" width="30" height="30"></div>
@@ -155,5 +166,9 @@
 
         <!--FIN FOOTER-->
     </main>
+
+    <!--SCRIPT BOOTSTRAP-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
 </body>
 </html>
